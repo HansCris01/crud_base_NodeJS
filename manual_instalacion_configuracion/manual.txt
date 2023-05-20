@@ -1,0 +1,163 @@
+Requisito: 
+
+_ Tener instalado XAMPP con mysql
+_ Tener instalado Node.JS
+_ Tener Git bash
+_ Tener Visual Code
+
+Paso 1: 
+
+Usar la terminar dentro de nuestro proyecto:
+
+_ comando para crear el package.json:
+
+npm init --yes
+
+_ comando para instalar el framework, el driver de base de datos, ver peticiones de BD y instalar plantilla
+
+npm install express mysql express-myconnection morgan ejs
+
+Esperar que cargue 
+
+Al terminar la carga nos tiene que aparecer la capa node_modules con todos sus componentes
+
+Paso 2: 
+
+_ Crear la capa(carpeta) : src 
+
+_ Dentro de la carpeta src vamos a crear el archivo "app.js" que sera el encargado de ejecutar todo el servidor
+
+Aqui se escribira el codigo de configuración, que esta en nuestro crud de guia
+
+_ comando para ejecutar la aplicación: node src/app.js
+  Ejecutamos en nuestro navegador localhost:3000 
+
+  Con : control + c  ---> se cancela el servidor para poder seguir programando
+
+
+_ comando para reniciar el servidor cuando estes desarrollando cada vez que hagas un cambio:
+
+  npm install nodemon -D
+
+Con eso se va instalar la dependencia de desarrollo en el archivo package.json
+------------------------------------------------------------
+https://www.youtube.com/watch?v=VxRXlUrV6y0&t=2479s
+
+minuto : 8:57
+
+continuar
+--------------------------------------------------------------
+
+Se va modificar el archivo src/app.js
+
+Escribir este comando: nodemon src/app.js 
+
+Si no funciona hay que modificar el archivo: package.json 
+
+En la linea 7 donde dice: 
+
+"scripts":{
+   "test": "echo \"Error: no test specified\" && exit 1" ---> quitar ese codigo y vamos a escribir un nuevo codigo.
+},
+
+escribimos el comando: npm run dev
+
+
+------------------------------------------------------------
+https://www.youtube.com/watch?v=VxRXlUrV6y0&t=2479s
+
+minuto : 11:48
+
+continuar
+--------------------------------------------------------------
+
+Ir a src/ vamos a crear la carpeta views
+
+vamos al archivo app.js para agregar una linea de codigo
+
+
+vamos a app.js a escribir el codigo de la conexion
+
+vamos a crear una carpeta bd_script y vamos a crear el archivo bd.js 
+en ese archivo va estar nuestro codigo de sql para crear la base de datos y la tabla.
+
+Ejecutamos el codigo sql en el mysql
+
+-------------------------------------------------------
+Paso 3 
+
+ir a la consola y escribir: npm run dev
+
+En la carpeta src/ vamos a crear la carpeta routes 
+y creamos la otra carpeta llamada controllers
+
+_ ir a la carpeta routes y crear el archivo persona.js 
+Dentro de ese archivo vamos a escribir un codigo
+
+_ vamos al archivo app.js para importar lo del router
+vamos a escribir codigo. 
+
+_ vamos a crear la carpeta public dentro de src
+
+_ vamos a crear el archivo personaController.js dentro de la carpeta controller
+
+Ahora vamos a persona.js para escribir codigo
+
+_ ir a personacontroller.js a escribir codigo
+
+_ vamos a persona.js
+
+Metodos: 
+
+vamos a ir a personaController.js a programar el metodo listar
+
+En la carpeta views/ vamos a crear el archivo persona.ejs
+
+
+Ir a persona.ejs para programar la interfaz grafica 
+
+
+vamos a crear la carpeta partials dentro de views para crear el header y footer para compartir el menu 
+
+vamos a crear el archivo: _header.ejs
+vamos a crear el archivo: _footer.ejs
+
+comando para poder escribir codigo javascript en persona.ejs
+
+comando: npm install -g ejs-lint
+
+
+ir al archivo persona.js para agregar codigo
+ir al archivo personaController.js para agregar codigo
+
+ir a app.js a escribir codigo
+
+
+---------------
+paso 4 
+
+vamos a crear un archivo en views/persona_edit.ejs
+
+
+
+Fin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
